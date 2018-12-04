@@ -12,7 +12,6 @@
     "clean": "gulp clean"
   },
   "dependencies": {
-    "ice": "^3.7.2",
     "slice2js": "^3.7.2"
   },
   "devDependencies": {
@@ -20,10 +19,11 @@
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-ext-replace": "^0.3.0",
-    "gulp-ice-builder": "^2.0.3",
+    "gulp-ice-builder": "file:../../../gulp-ice-builder",
     "gulp-newer": "^1.4.0",
     "gulp-terser": "^1.1.5",
     "gulp-typescript": "^5.0.0-alpha.3",
+    "ice": "file:../../../ice/js",
     "pump": "^3.0.0",
     "typescript": "^3.1.6",
     "vinyl-paths": "^2.1.0"

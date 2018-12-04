@@ -4,11 +4,8 @@
 //
 // **********************************************************************
 
-/// <reference path="../node_modules/ice/src/index.d.ts" />
-/// <reference path="node_modules/chat/index.d.ts" />
-
 import {Ice, Glacier2} from "ice";
-import {Chat} from "chat";
+import {Chat} from "./index";
 
 (function()
 {

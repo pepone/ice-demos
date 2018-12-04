@@ -5,7 +5,7 @@
 // **********************************************************************
 
 import {Ice} from "ice";
-import {Filesystem} from "simple-filesystem";
+import {Filesystem} from "./index";
 
 (async function()
 {

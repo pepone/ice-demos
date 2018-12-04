@@ -4,11 +4,8 @@
 //
 // **********************************************************************
 
-/// <reference path="../../node_modules/ice/src/index.d.ts" />
-/// <reference path="node_modules/throughput/index.d.ts" />
-
 import {Ice} from "ice";
-import {Demo} from "throughput";
+import {Demo} from "./index";
 
 (function(){
 

@@ -13,7 +13,6 @@
     "run": "gulp run"
   },
   "dependencies": {
-    "ice": "^3.7.2",
     "slice2js": "^3.7.2"
   },
   "devDependencies": {
@@ -21,13 +20,14 @@
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-ext-replace": "^0.3.0",
-    "gulp-ice-builder": "^2.0.3",
+    "gulp-ice-builder": "file:../../../gulp-ice-builder",
     "gulp-newer": "^1.4.0",
     "gulp-open": "^3.0.1",
     "gulp-terser": "^1.1.5",
     "gulp-typescript": "^5.0.0-alpha.3",
     "hogan.js": "^3.0.2",
     "http-proxy": "^1.17.0",
+    "ice": "file:../../../ice/js",
     "pump": "^3.0.0",
     "rollup": "^0.67.0",
     "rollup-plugin-node-resolve": "^3.4.0",
