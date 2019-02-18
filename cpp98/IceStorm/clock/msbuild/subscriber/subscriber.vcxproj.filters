@@ -91,4 +91,9 @@
       <Filter>Header Files\x64\Release</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <SliceCompile Include="..\..\Clock.ice">
+      <Filter>Slice Files</Filter>
+    </SliceCompile>
+  </ItemGroup>
 </Project>

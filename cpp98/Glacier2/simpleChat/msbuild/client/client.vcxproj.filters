@@ -90,4 +90,9 @@
       <Filter>Header Files\x64\Release</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <SliceCompile Include="..\..\Chat.ice">
+      <Filter>Slice Files</Filter>
+    </SliceCompile>
+  </ItemGroup>
 </Project>

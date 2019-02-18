@@ -101,4 +101,9 @@
     <None Include="..\..\config.server" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <SliceCompile Include="..\..\Hello.ice">
+      <Filter>Slice Files</Filter>
+    </SliceCompile>
+  </ItemGroup>
 </Project>

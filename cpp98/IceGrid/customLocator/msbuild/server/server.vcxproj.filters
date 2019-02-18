@@ -98,4 +98,9 @@
   <ItemGroup>
     <Xml Include="..\..\application.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <SliceCompile Include="..\..\Hello.ice">
+      <Filter>Slice Files</Filter>
+    </SliceCompile>
+  </ItemGroup>
 </Project>

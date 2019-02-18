@@ -97,4 +97,9 @@
     <None Include="..\..\config.glacier2" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <SliceCompile Include="..\..\Chat.ice">
+      <Filter>Slice Files</Filter>
+    </SliceCompile>
+  </ItemGroup>
 </Project>
