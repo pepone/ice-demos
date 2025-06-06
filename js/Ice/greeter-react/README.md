@@ -16,7 +16,7 @@ Then, in a separate terminal:
 - Navigate to the demo directory:
 
   ```shell
-  cd js/Ice/greeter
+  cd js/Ice/greeter-react
   ```
 
 - Install JavaScript dependencies:
