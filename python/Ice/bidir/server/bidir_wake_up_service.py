@@ -24,6 +24,7 @@ async def callRing(alarmClock: AlarmClockPrx, wakeUpDatetime: datetime):
         The datetime when the alarm should ring.
     """
     delay = wakeUpDatetime.timestamp() - time.time()
+    print (f"Waiting until {delay} to ring the alarm clock...")
     if delay > 0:
         await asyncio.sleep(delay)
 
@@ -33,13 +34,19 @@ async def callRing(alarmClock: AlarmClockPrx, wakeUpDatetime: datetime):
     # Keep ringing every 10 seconds until the user presses the stop button.
     while buttonPressed is ButtonPressed.Snooze:
         await asyncio.sleep(10)
+        print("Snooze time is over. Ringing again...")
         buttonPressed = await alarmClock.ringAsync("No more snoozing!")
+    
+    print("Client pressed Stop on alarm clock.")
 
 
 class BidirWakeUpService(WakeUpService):
     """
     BidirWakeUpService is an Ice servant that implements Slice interface WakeUpService.
     """
+
+    def __init__(self, loop: asyncio.AbstractEventLoop):
+        self._loop = loop
 
     def wakeMeUp(self, timeStamp: int, current: Ice.Current) -> None:
         """
@@ -65,6 +72,5 @@ class BidirWakeUpService(WakeUpService):
         alarmClock = AlarmClockPrx.uncheckedCast(current.con.createProxy(Ice.Identity(name="alarmClock")))
 
         # Schedule the callRing coroutine in the current event loop. Ice dispatches async methods using the configured
-        # event loop, which can be accessed via asyncio.get_running_loop().
-        asyncio.get_running_loop().create_task(callRing(alarmClock, wakeUpDatetime))
-        print("Client pressed Stop on alarm clock.")
+        # event loop.
+        self._loop.create_task(callRing(alarmClock, wakeUpDatetime))

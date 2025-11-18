@@ -3,7 +3,10 @@ name = "ice-bidir-server"
 version = "0.1.0"
 description = "Ice bidir demo server application"
 requires-python = ">=3.12"
-dependencies = ["zeroc-ice"]
+dependencies = ["zeroc-ice", "common"]
+
+[tool.uv.sources]
+common = { path = "../../../common" }
 
 [tool.uv]
 # Allow pre-releases globally (so the nightly zeroc-ice can be selected)
