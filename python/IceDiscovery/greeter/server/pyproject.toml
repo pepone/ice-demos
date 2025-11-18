@@ -1,5 +1,5 @@
 [project]
-name = "ice_discovery-greeter-server"
+name = "icediscovery-greeter-server"
 version = "0.1.0"
 description = "IceDiscovery greeter demo server application"
 requires-python = ">=3.12"

@@ -1,5 +1,5 @@
 [project]
-name = "ice_discovery-replication-client"
+name = "icediscovery-replication-client"
 version = "0.1.0"
 description = "IceDiscovery replication demo client application"
 requires-python = ">=3.12"

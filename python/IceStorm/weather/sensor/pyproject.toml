@@ -1,5 +1,5 @@
 [project]
-name = "ice_storm-weather-sensor"
+name = "icestorm-weather-sensor"
 version = "0.1.0"
 description = "IceStorm weather demo sensor application"
 requires-python = ">=3.12"

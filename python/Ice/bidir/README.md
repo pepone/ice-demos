@@ -31,7 +31,7 @@ uv run slice2py ../slice/AlarmClock.ice
 ### 2. Run the server
 
 ```shell
-uv run python main.py
+uv run main.py
 ```
 
 ## Running the client
@@ -46,7 +46,7 @@ Use the Slice-to-Python compiler to generate Python code from the `AlarmClock.ic
 uv run slice2py ../slice/AlarmClock.ice
 ```
 
-### 4. Run the client
+### 2. Run the client
 
 ```bash
 uv run main.py
