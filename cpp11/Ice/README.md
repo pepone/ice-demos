@@ -2,27 +2,21 @@ Demos in this directory:
 
 - [async](./async)
 
-  This demo illustrates the use of Asynchronous Method Invocation
-  (AMI) and Asynchronous Method Dispatch (AMD).
+  This demo illustrates the use of Asynchronous Method Invocation (AMI) and Asynchronous Method Dispatch (AMD).
 
 - [asyncInvocation](./asyncInvocation)
 
-  This demo illustrates the use of Asynchronous Method Invocation
-  (AMI), with both futures and callbacks.
+  This demo illustrates the use of Asynchronous Method Invocation (AMI), with both futures and callbacks.
 
 - [bidir](./bidir)
 
-  This demo shows how to use bidirectional connections for callbacks.
-  This is typically used if the server cannot open a connection to the
-  client to send callbacks, for example, because firewalls block
-  incoming connections to the client.
+  This demo shows how to use bidirectional connections for callbacks. This is typically used if the server cannot open a
+  connection to the client to send callbacks, for example, because firewalls block incoming connections to the client.
 
 - [callback](./callback)
 
-  A simple callback demo that illustrates how a client can pass a
-  proxy to a server, invoke an operation in the server, and the server
-  call back into an object provided by the client as part of that
-  invocation.
+  A simple callback demo that illustrates how a client can pass a proxy to a server, invoke an operation in the server,
+  and the server call back into an object provided by the client as part of that invocation.
 
 - [context](./context)
 
@@ -30,20 +24,17 @@ Demos in this directory:
 
 - [hello](./hello)
 
-  This demo illustrates how to invoke ordinary (twoway) operations, as
-  well as how to invoke oneway operations, use datagrams, secure
-  invocations, and how to use batched invocations.
+  This demo illustrates how to invoke ordinary (twoway) operations, as well as how to invoke oneway operations, use
+  datagrams, secure invocations, and how to use batched invocations.
 
 - [interceptor](./interceptor)
 
-  This demo shows how to use dispatch interceptors to secure operations
-  with a token based authentication system, in addition to the use of
-  implicit contexts.
+  This demo shows how to use dispatch interceptors to secure operations with a token based authentication system, in
+  addition to the use of implicit contexts.
 
 - [interleaved](./interleaved)
 
-  This demo is a variant of the throughput demo that uses asynchronous requests
-  to send "echo" requests to the server.
+  This demo is a variant of the throughput demo that uses asynchronous requests to send "echo" requests to the server.
 
 - [invoke](./invoke)
 
@@ -51,8 +42,7 @@ Demos in this directory:
 
 - [latency](./latency)
 
-  A simple latency test that measures the basic call dispatch delay of
-  Ice.
+  A simple latency test that measures the basic call dispatch delay of Ice.
 
 - [locator](./locator)
 
@@ -64,8 +54,8 @@ Demos in this directory:
 
 - [mtalk](./mtalk)
 
-  A command-line client that uses multicast to locate another device on
-  Linux or Android and then chat over a secure peer-to-peer connection.
+  A command-line client that uses multicast to locate another device on Linux or Android and then chat over a secure
+  peer-to-peer connection.
 
 - [multicast](./multicast)
 
@@ -73,8 +63,7 @@ Demos in this directory:
 
 - [nested](./nested)
 
-  A demo to illustrate how nested callbacks work, and how the size of
-  the thread pool affects the maximum nesting depth.
+  A demo to illustrate how nested callbacks work, and how the size of the thread pool affects the maximum nesting depth.
 
 - [optional](./optional)
 
@@ -86,23 +75,15 @@ Demos in this directory:
 
 - [properties](./properties)
 
-  Shows how to access a server's PropertiesAdmin facet in order to
-  retrieve and modify its configuration properties, and how the server
-  can receive notifications whenever its properties are changed.
-
-- [qt](./qt)
-
-  A qt application that shows how to use Asynchronous Method Invocation
-  (AMI) in a graphical client.
+  Shows how to access a server's PropertiesAdmin facet in order to retrieve and modify its configuration properties, and
+  how the server can receive notifications whenever its properties are changed.
 
 - [session](./session)
 
-  This demo shows how to use sessions to clean up client-specific
-  resources in a server after the client shuts down or crashes.
+  This demo shows how to use sessions to clean up client-specific resources in a server after the client shuts down or
+  crashes.
 
 - [throughput](./throughput)
 
-  A simple throughput demo that allows you to send sequences of
-  various types between client and server and to measure the maximum
-  bandwidth that can be achieved using serialized synchronous
-  requests.
+  A simple throughput demo that allows you to send sequences of various types between client and server and to measure
+  the maximum bandwidth that can be achieved using serialized synchronous requests.

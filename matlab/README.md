@@ -2,9 +2,8 @@
 
 ## Overview
 
-This directory contains MATLAB sample programs for various Ice components.
-These examples are provided to get you started on using a particular Ice
-feature or coding technique.
+This directory contains MATLAB sample programs for various Ice components. These examples are provided to get you
+started on using a particular Ice feature or coding technique.
 
 The following subdirectories contain sample programs:
 
@@ -16,8 +15,7 @@ The following subdirectories contain sample programs:
 
 ## Build Instructions
 
-Open MATLAB, and change to the [matlab](../matlab) demo directory
-using the MATLAB console:
+Open MATLAB, and change to the [matlab](../matlab) demo directory using the MATLAB console:
 
 ```shell
 cd matlab

@@ -62,34 +62,18 @@ bin directory to your PATH. Please refer to the [Release Notes] for additional i
 
 ### Using nightly builds
 
-To use nightly builds, add a `NuGet.Config` file in `csharp` with the nightly feed and source mappings:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <!-- Define the package sources, nuget.org and zeroc.com. -->
-  <!-- `clear` ensures no additional sources are inherited from another config file. -->
-  <packageSources>
-    <clear />
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
-    <add key="zeroc.com" value="https://download.zeroc.com/nexus/repository/nuget-3.7-nightly/" />
-  </packageSources>
-
-  <!-- Define mappings by adding package patterns beneath the target source. -->
-  <!-- zeroc.* packages will be restored from zeroc.com, everything else from nuget.org. -->
-  <packageSourceMapping>
-    <packageSource key="nuget.org">
-      <package pattern="*" />
-    </packageSource>
-    <packageSource key="zeroc.com">
-      <package pattern="zeroc.*" />
-    </packageSource>
-  </packageSourceMapping>
-</configuration>
-```
-
-Then set `IceVersion`. For example:
+You can build the demos using the latest Ice nightly packages from the ZeroC nightly
+repository. Run the setup script from the repository root:
 
 ```shell
-dotnet msbuild /p:IceVersion="3.7.11-nightly.*" msbuild/ice.proj
+python scripts/setup-nightly.py --channel 3.7
+```
+
+This configures the repository to use Ice nightly NuGet packages. Then build and run the
+demos as described above.
+
+To reset back to the release packages:
+
+```shell
+python scripts/setup-nightly.py --reset
 ```
